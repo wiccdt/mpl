@@ -27,6 +27,7 @@ for i in range(1, 6):
 if __name__ == "__main__":
     with ThreadPool(processes=5) as pool:
         results = pool.map(process_file, files)
+        print(results)
     arr_A = np.vstack((results[0][0], results[1][0], results[2][0], results[3][0], results[4][0]))
     arr_B = np.vstack((results[0][1], results[1][1], results[2][1], results[3][1], results[4][1]))
     arr_C = np.vstack((results[0][2], results[1][2], results[2][2], results[3][2], results[4][2]))
