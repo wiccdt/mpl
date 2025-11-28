@@ -211,7 +211,7 @@ class CppToPython:
                     param = param.strip()
                     for param_type in return_types + ["const", "[", "]"]:
                         param = param.replace(param_type, "").strip()
-                    param_name = param.split()[-1] if param.split() else param
+                    param_name = param.split()[-1]
                     params.append(param_name)
 
             self.in_function = True
