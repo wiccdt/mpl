@@ -18,6 +18,9 @@ Window.clearcolor = (144 / 255, 223 / 255, 255 / 255, 0.2 / 255)
 Window.title = "Отправить в Kafka"
 
 
+#CONSUMER ПОКА НЕ ДОПИСАН, запускала через docker посмотреть что сообщения приходят в топик
+
+
 class Producer(App):
     def __init__(self):
         super().__init__()
