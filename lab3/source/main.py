@@ -13,13 +13,13 @@ import json
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
 
+#B9123-09.03.04, подгруппа 5
+#Producer: Серёдкина Виктория
+#Consumer: Шурыгин Денис
+
 Window.size = (800, 600)
 Window.clearcolor = (144 / 255, 223 / 255, 255 / 255, 0.2 / 255)
 Window.title = "Отправить в Kafka"
-
-
-#CONSUMER ПОКА НЕ ДОПИСАН, запускала через docker посмотреть что сообщения приходят в топик
-
 
 class Producer(App):
     def __init__(self):
